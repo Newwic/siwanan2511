@@ -12,16 +12,25 @@
 
 <!-- Navbar -->
 <nav>
-    <h2>Siwanan2511</h2>
-    <div>
+    <h2 class="logo">Siwanan2511</h2>
+
+    <!-- ปุ่มเมนูมือถือ -->
+    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+
+    <div class="nav-links" id="navLinks">
         <a href="#home">หน้าแรก</a>
         <a href="#services">บริการ</a>
         <a href="#work">ผลงาน</a>
-        <a href="#review">รีวิว</a>
         <a href="#contact">ติดต่อ</a>
     </div>
 </nav>
 
+<!-- 🔥 Script เปิด/ปิดเมนู -->
+<script>
+function toggleMenu() {
+    document.getElementById("navLinks").classList.toggle("show");
+}
+</script>
 <!-- Hero -->
 <header id="home">
     <h1>รับติดตั้งงานอลูมิเนียม & กระจก</h1>
