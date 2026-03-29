@@ -1,19 +1,16 @@
-function openImg(src) {
-    document.getElementById("popup").style.display = "block";
-    document.getElementById("popupImg").src = src;
-}
+<div class="services">
+    <div class="card">
+        <h3>งานอลูมิเนียม</h3>
+        <p>ติดตั้งประตู หน้าต่าง</p>
+    </div>
 
-function closeImg() {
-    document.getElementById("popup").style.display = "none";
-}
+    <div class="card">
+        <h3>งานกระจก</h3>
+        <p>กระจกใส เทมเปอร์</p>
+    </div>
 
-/* Scroll Animation */
-window.addEventListener("scroll", () => {
-    document.querySelectorAll(".card").forEach(card => {
-        let pos = card.getBoundingClientRect().top;
-        if (pos < window.innerHeight) {
-            card.style.opacity = 1;
-            card.style.transform = "translateY(0)";
-        }
-    });
-});
+    <div class="card">
+        <h3>งานก่อสร้าง</h3>
+        <p>ต่อเติม ซ่อมแซม</p>
+    </div>
+</div>
