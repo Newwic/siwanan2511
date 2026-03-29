@@ -1,41 +1,95 @@
 <!DOCTYPE html>
-<html>
+<html lang="th">
 <head>
 <meta charset="UTF-8">
-<title>Siwanan2511</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Siwanan2511 Aluminum</title>
 
 <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<header>
-    <h1>Siwanan2511 Aluminum</h1>
-    <p>รับติดตั้ง อลูมิเนียม | กระจก | ก่อสร้าง</p>
-</header>
-
+<!-- Navbar -->
 <nav>
-    <a href="#">หน้าแรก</a>
-    <a href="#">บริการ</a>
-    <a href="#">ผลงาน</a>
-    <a href="#">ติดต่อ</a>
+    <h2>Siwanan2511</h2>
+    <div>
+        <a href="#home">หน้าแรก</a>
+        <a href="#services">บริการ</a>
+        <a href="#work">ผลงาน</a>
+        <a href="#contact">ติดต่อ</a>
+    </div>
 </nav>
 
-<section>
+<!-- Hero -->
+<header id="home">
+    <h1>รับติดตั้งงานอลูมิเนียม & กระจก</h1>
+    <p>งานเนี๊ยบ ราคาคุ้มค่า พร้อมติดตั้งถึงที่</p>
+    <a href="tel:099xxxxxxx" class="btn">📞 โทรเลย</a>
+</header>
+
+<!-- Services -->
+<section id="services">
     <h2>บริการของเรา</h2>
-    <div class="box">งานอลูมิเนียม</div>
-    <div class="box">ติดตั้งกระจก</div>
-    <div class="box">งานก่อสร้าง</div>
+
+    <div class="grid">
+        <div class="card">
+            <h3>อลูมิเนียม</h3>
+            <p>ประตู หน้าต่าง แข็งแรง ทนทาน</p>
+        </div>
+
+        <div class="card">
+            <h3>กระจก</h3>
+            <p>กระจกนิรภัย เทมเปอร์ ปลอดภัย</p>
+        </div>
+
+        <div class="card">
+            <h3>ก่อสร้าง</h3>
+            <p>ต่อเติม ซ่อมแซม งานครบวงจร</p>
+        </div>
+    </div>
 </section>
 
-<section>
-    <h2>ผลงาน</h2>
-    <img src="images/work1.jpg">
-    <img src="images/work2.jpg">
+<!-- Before After -->
+<section id="work">
+    <h2>ผลงานจริงของเรา</h2>
+
+    <div class="ba">
+        <div class="box">
+            <h4>ก่อนทำ (Before)</h4>
+            <img src="images/before.jpg" alt="before">
+        </div>
+
+        <div class="box">
+            <h4>หลังทำ (After)</h4>
+            <img src="images/after.jpg" alt="after">
+        </div>
+    </div>
 </section>
+
+<!-- Contact -->
+<section id="contact">
+    <h2>ติดต่อเรา</h2>
+
+    <p>📞 โทร: 099-xxx-xxxx</p>
+    <p>📍 ที่อยู่: 9/9 ตำบลลำโพ อำเภอบางบัวทอง จังหวัดนนทบุรี</p>
+
+    <!-- Map -->
+    <iframe 
+        src="https://www.google.com/maps?q=13.9518981,100.439884&z=18&output=embed"
+        width="100%" height="300" style="border-radius:10px;">
+    </iframe>
+
+    <br><br>
+
+    <a href="https://line.me/ti/p/yourid" class="btn">💬 แอด LINE</a>
+</section>
+
+<!-- Floating Button -->
+<a href="https://line.me/ti/p/yourid" class="float">💬</a>
 
 <footer>
-    <p>โทร: 099-xxx-xxxx</p>
+    <p>© 2026 Siwanan2511 Aluminum | รับติดตั้งทั่วนนทบุรี</p>
 </footer>
 
 </body>
