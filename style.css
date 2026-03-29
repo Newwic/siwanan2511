@@ -1,43 +1,62 @@
-/* 📱 MOBILE UI FIX */
+/* 📱 MOBILE UI FIX PRO */
 @media (max-width: 600px) {
 
     /* Navbar */
     nav {
         flex-direction: column;
         align-items: center;
+        padding: 10px;
     }
 
     nav h2 {
-        margin-bottom: 10px;
+        margin: 5px 0;
+        font-size: 20px;
     }
 
     nav div {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
+        gap: 10px;
+    }
+
+    nav a {
+        font-size: 14px;
     }
 
     /* Hero */
     header {
         height: auto;
-        padding: 60px 15px;
+        padding: 50px 15px;
     }
 
     header h1 {
-        font-size: 24px;
-        line-height: 1.3;
+        font-size: 22px;
+        line-height: 1.4;
     }
 
     header p {
         font-size: 14px;
+        margin-bottom: 15px;
     }
 
     /* ปุ่ม */
     .btn {
         display: block;
-        width: 80%;
-        margin: 10px auto;
+        width: 90%;
+        margin: 8px auto;
         text-align: center;
+        font-size: 16px;
+        padding: 12px;
+    }
+
+    /* Section spacing */
+    section {
+        padding: 40px 15px;
+    }
+
+    h2 {
+        font-size: 20px;
     }
 
     /* Services */
@@ -47,33 +66,39 @@
     }
 
     .card {
-        width: 90%;
+        width: 95%;
+        margin: 10px 0;
+        padding: 20px;
     }
 
     /* Before After */
     .ba {
         flex-direction: column;
         align-items: center;
+        gap: 15px;
     }
 
     .box img {
-        width: 90%;
+        width: 95%;
     }
 
     /* Map */
     iframe {
-        height: 250px;
+        height: 220px;
         border-radius: 10px;
     }
 
     /* Contact */
     #contact p {
         font-size: 14px;
+        line-height: 1.5;
     }
 
     /* Floating Button */
     .float {
-        padding: 12px;
-        font-size: 18px;
+        padding: 14px;
+        font-size: 20px;
+        bottom: 15px;
+        right: 15px;
     }
 }
