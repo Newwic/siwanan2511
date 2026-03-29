@@ -1,104 +1,166 @@
-/* 📱 MOBILE UI FIX PRO */
-@media (max-width: 600px) {
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Arial;
+    background: #f4f6f9;
+}
 
-    /* Navbar */
+/* Navbar */
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 30px;
+    background: #0d1b2a;
+    color: white;
+    position: sticky;
+    top: 0;
+}
+
+nav a {
+    color: white;
+    margin: 10px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #fca311;
+}
+
+/* Hero */
+header {
+    height: 90vh;
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
+    url('https://images.unsplash.com/photo-1503387762-592deb58ef4e');
+    background-size: cover;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 40px;
+}
+
+/* Button */
+.btn {
+    background: #fca311;
+    padding: 12px 20px;
+    color: black;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #ffba33;
+}
+
+.green {
+    background: #25d366;
+    color: white;
+}
+
+/* Section */
+section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+/* Grid */
+.grid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* Card */
+.card {
+    background: white;
+    margin: 15px;
+    padding: 25px;
+    width: 250px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+/* Gallery / Work */
+.ba {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.box img {
+    width: 250px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.box img:hover {
+    transform: scale(1.05);
+}
+
+/* Contact */
+#contact {
+    background: #14213d;
+    color: white;
+}
+
+/* Floating */
+.float {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #25d366;
+    color: white;
+    padding: 15px;
+    border-radius: 50%;
+    text-decoration: none;
+}
+
+/* Footer */
+footer {
+    background: #000;
+    color: white;
+    padding: 15px;
+}
+
+/* 📱 Mobile */
+@media (max-width: 600px) {
     nav {
         flex-direction: column;
-        align-items: center;
-        padding: 10px;
+        text-align: center;
     }
 
-    nav h2 {
-        margin: 5px 0;
-        font-size: 20px;
-    }
-
-    nav div {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 10px;
-    }
-
-    nav a {
-        font-size: 14px;
-    }
-
-    /* Hero */
     header {
         height: auto;
-        padding: 50px 15px;
+        padding: 60px 15px;
     }
 
     header h1 {
-        font-size: 22px;
-        line-height: 1.4;
-    }
-
-    header p {
-        font-size: 14px;
-        margin-bottom: 15px;
-    }
-
-    /* ปุ่ม */
-    .btn {
-        display: block;
-        width: 90%;
-        margin: 8px auto;
-        text-align: center;
-        font-size: 16px;
-        padding: 12px;
-    }
-
-    /* Section spacing */
-    section {
-        padding: 40px 15px;
-    }
-
-    h2 {
-        font-size: 20px;
-    }
-
-    /* Services */
-    .grid {
-        flex-direction: column;
-        align-items: center;
+        font-size: 24px;
     }
 
     .card {
-        width: 95%;
-        margin: 10px 0;
-        padding: 20px;
-    }
-
-    /* Before After */
-    .ba {
-        flex-direction: column;
-        align-items: center;
-        gap: 15px;
+        width: 90%;
     }
 
     .box img {
-        width: 95%;
+        width: 90%;
     }
 
-    /* Map */
-    iframe {
-        height: 220px;
-        border-radius: 10px;
-    }
-
-    /* Contact */
-    #contact p {
-        font-size: 14px;
-        line-height: 1.5;
-    }
-
-    /* Floating Button */
-    .float {
-        padding: 14px;
-        font-size: 20px;
-        bottom: 15px;
-        right: 15px;
+    .btn {
+        display: block;
+        width: 90%;
+        margin: 10px auto;
     }
 }
