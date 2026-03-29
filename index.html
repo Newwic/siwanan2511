@@ -1,10 +1,54 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Siwanan2511</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Siwanan2511</title>
+
+<link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <h1>Siwanan2511 Company</h1>
-    <p>ยินดีต้อนรับ</p>
+
+<header>
+    <h1>Siwanan2511 Aluminum</h1>
+    <p>รับติดตั้ง อลูมิเนียม | กระจก | ก่อสร้าง</p>
+</header>
+
+<nav>
+    <a href="#">หน้าแรก</a>
+    <a href="#">บริการ</a>
+    <a href="#">ผลงาน</a>
+    <a href="#">ติดต่อ</a>
+</nav>
+
+<section>
+    <h2>บริการของเรา</h2>
+    <div class="services">
+        <div class="box">งานอลูมิเนียม</div>
+        <div class="box">ติดตั้งกระจก</div>
+        <div class="box">งานก่อสร้าง</div>
+    </div>
+</section>
+
+<section>
+    <h2>ผลงาน</h2>
+    <div class="gallery">
+        <img src="images/work1.jpg" onclick="openImg(this.src)">
+        <img src="images/work2.jpg" onclick="openImg(this.src)">
+    </div>
+</section>
+
+<!-- popup รูป -->
+<div id="popup" onclick="closeImg()">
+    <img id="popupImg">
+</div>
+
+<footer>
+    <p>โทร: 099-xxx-xxxx</p>
+</footer>
+
+<script src="script.js"></script>
+
 </body>
 </html>
