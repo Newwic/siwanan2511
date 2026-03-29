@@ -1,118 +1,80 @@
-body {
-    margin: 0;
-    font-family: Arial;
-    background: #f4f6f9;
-}
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Siwanan2511 Aluminum</title>
 
-/* Navbar */
-nav {
-    display: flex;
-    justify-content: space-between;
-    padding: 15px 30px;
-    background: #0d1b2a;
-    color: white;
-}
+<link rel="stylesheet" href="style.css">
+</head>
 
-nav a {
-    color: white;
-    margin: 10px;
-    text-decoration: none;
-}
+<body>
 
-/* Header */
-header {
-    height: 90vh;
-    background: linear-gradient(rgba(13,27,42,0.8), rgba(13,27,42,0.8)),
-    url('https://images.unsplash.com/photo-1503387762-592deb58ef4e');
-    background-size: cover;
-    color: white;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
+<nav>
+    <h2>Siwanan2511</h2>
+    <div>
+        <a href="#home">หน้าแรก</a>
+        <a href="#services">บริการ</a>
+        <a href="#gallery">ผลงาน</a>
+        <a href="#contact">ติดต่อ</a>
+    </div>
+</nav>
 
-header h1 {
-    font-size: 40px;
-}
+<header id="home">
+    <h1>งานอลูมิเนียม & กระจก มืออาชีพ</h1>
+    <p>ติดตั้งคุณภาพ งานสวย ทนทาน ราคาคุ้มค่า</p>
+    <a href="#contact" class="btn">ติดต่อเรา</a>
+</header>
 
-/* Button */
-.btn {
-    background: #fca311;
-    padding: 12px 20px;
-    color: black;
-    text-decoration: none;
-    border-radius: 5px;
-    font-weight: bold;
-}
+<section id="services">
+    <h2>บริการของเรา</h2>
+    <div class="services">
+        <div class="card">
+            <h3>งานอลูมิเนียม</h3>
+            <p>ประตู หน้าต่าง อลูมิเนียม</p>
+        </div>
 
-/* Section */
-section {
-    padding: 50px 20px;
-    text-align: center;
-}
+        <div class="card">
+            <h3>งานกระจก</h3>
+            <p>กระจกใส กระจกเทมเปอร์</p>
+        </div>
 
-/* Cards */
-.services {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-}
+        <div class="card">
+            <h3>งานก่อสร้าง</h3>
+            <p>ต่อเติม ซ่อมแซม บ้าน อาคาร</p>
+        </div>
+    </div>
+</section>
 
-.card {
-    background: white;
-    margin: 15px;
-    padding: 25px;
-    width: 250px;
-    border-radius: 10px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-}
+<section id="gallery">
+    <h2>ผลงานของเรา</h2>
+    <div class="gallery">
+        <img src="images/work1.jpg" onclick="openImg(this.src)">
+        <img src="images/work2.jpg" onclick="openImg(this.src)">
+    </div>
+</section>
 
-/* Gallery */
-.gallery img {
-    width: 250px;
-    margin: 10px;
-    border-radius: 10px;
-    cursor: pointer;
-}
+<div id="popup" onclick="closeImg()">
+    <img id="popupImg">
+</div>
 
-/* Contact */
-#contact {
-    background: #14213d;
-    color: white;
-}
+<section id="contact">
+    <h2>ติดต่อเรา</h2>
+    <p>📞 099-xxx-xxxx</p>
 
-/* Floating Button */
-.float-btn {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    background: #25d366;
-    color: white;
-    padding: 15px;
-    border-radius: 50%;
-    text-decoration: none;
-}
+    <p>📍 ที่อยู่:</p>
+    <p>9/9 ตำบลลำโพ อำเภอบางบัวทอง จังหวัดนนทบุรี</p>
 
-/* Footer */
-footer {
-    background: #000;
-    color: white;
-    padding: 15px;
-}
+    <a href="https://line.me/ti/p/yourid" class="btn">แอด LINE</a>
+</section>
 
-/* Responsive */
-@media (max-width: 600px) {
-    nav {
-        flex-direction: column;
-        text-align: center;
-    }
+<a href="https://line.me/ti/p/yourid" class="float-btn">💬</a>
 
-    header h1 {
-        font-size: 24px;
-    }
+<footer>
+    <p>© 2026 Siwanan2511 Aluminum</p>
+</footer>
 
-    .card {
-        width: 90%;
-    }
-}
+<script src="script.js"></script>
+
+</body>
+</html>
