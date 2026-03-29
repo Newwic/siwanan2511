@@ -223,3 +223,70 @@ footer {
         height: 250px;
     }
 }
+/* โลโก้เป็นสีขาว */
+.logo {
+    color: white;
+}
+
+/* Hamburger */
+.menu-toggle {
+    display: none;
+    font-size: 26px;
+    cursor: pointer;
+}
+
+/* Animation เมนู */
+.nav-links {
+    transition: all 0.3s ease;
+}
+
+/* 📱 Mobile */
+@media (max-width: 600px) {
+
+    nav {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    /* แสดง ☰ */
+    .menu-toggle {
+        display: block;
+        color: white;
+    }
+
+    /* ซ่อนเมนู */
+    .nav-links {
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background: #0d1b2a;
+        width: 100%;
+        display: none;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    /* ตอนเปิด */
+    .nav-links.show {
+        display: flex;
+        animation: slideDown 0.3s ease;
+    }
+
+    .nav-links a {
+        padding: 15px;
+        border-top: 1px solid #1b263b;
+    }
+}
+
+/* 🎬 Animation */
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
