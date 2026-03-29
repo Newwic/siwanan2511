@@ -10,57 +10,66 @@
 
 <body>
 
-<header>
-    <h1>Siwanan2511 Aluminum</h1>
-    <p>งานอลูมิเนียม | กระจก | ก่อสร้าง ครบวงจร</p>
+<!-- Navbar -->
+<nav id="navbar">
+    <h2>Siwanan2511</h2>
+    <div>
+        <a href="#home">หน้าแรก</a>
+        <a href="#services">บริการ</a>
+        <a href="#gallery">ผลงาน</a>
+        <a href="#contact">ติดต่อ</a>
+    </div>
+</nav>
+
+<!-- Hero -->
+<header id="home">
+    <h1>ผู้เชี่ยวชาญงานอลูมิเนียมและกระจก</h1>
+    <p>ประสบการณ์จริง งานคุณภาพ รับประกัน</p>
     <a href="#contact" class="btn">ติดต่อเรา</a>
 </header>
 
-<nav>
-    <a href="#">หน้าแรก</a>
-    <a href="#services">บริการ</a>
-    <a href="#gallery">ผลงาน</a>
-    <a href="#contact">ติดต่อ</a>
-</nav>
-
+<!-- Services -->
 <section id="services">
     <h2>บริการของเรา</h2>
-    <div class="services">
+    <div class="grid">
         <div class="card">
-            <h3>งานอลูมิเนียม</h3>
-            <p>ติดตั้งประตู หน้าต่าง อลูมิเนียม</p>
+            <h3>อลูมิเนียม</h3>
+            <p>ประตู หน้าต่าง คุณภาพสูง</p>
         </div>
-
         <div class="card">
-            <h3>งานกระจก</h3>
-            <p>กระจกใส กระจกเทมเปอร์</p>
+            <h3>กระจก</h3>
+            <p>กระจกนิรภัย เทมเปอร์</p>
         </div>
-
         <div class="card">
-            <h3>งานก่อสร้าง</h3>
-            <p>ต่อเติม ซ่อมแซม บ้าน อาคาร</p>
+            <h3>ก่อสร้าง</h3>
+            <p>ต่อเติม ซ่อมแซม ครบวงจร</p>
         </div>
     </div>
 </section>
 
+<!-- Gallery -->
 <section id="gallery">
-    <h2>ผลงานของเรา</h2>
+    <h2>ผลงาน</h2>
     <div class="gallery">
         <img src="images/work1.jpg" onclick="openImg(this.src)">
         <img src="images/work2.jpg" onclick="openImg(this.src)">
     </div>
 </section>
 
-<!-- popup -->
+<!-- Popup -->
 <div id="popup" onclick="closeImg()">
     <img id="popupImg">
 </div>
 
+<!-- Contact -->
 <section id="contact">
     <h2>ติดต่อเรา</h2>
     <p>📞 099-xxx-xxxx</p>
     <a href="https://line.me/ti/p/yourid" class="btn">แอด LINE</a>
 </section>
+
+<!-- Floating Button -->
+<a href="https://line.me/ti/p/yourid" class="float-btn">💬</a>
 
 <footer>
     <p>© 2026 Siwanan2511</p>
