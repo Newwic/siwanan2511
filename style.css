@@ -78,3 +78,22 @@
 
 </body>
 </html>
+/* Before After */
+.ba {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.ba img {
+    width: 250px;
+    border-radius: 10px;
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+    .ba img {
+        width: 90%;
+    }
+}
