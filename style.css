@@ -1,78 +1,121 @@
 body {
     margin: 0;
     font-family: Arial;
+    background: #f8f9fa;
 }
 
+/* Header */
 header {
-    background: #007bff;
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+    url('https://images.unsplash.com/photo-1503387762-592deb58ef4e');
+    background-size: cover;
     color: white;
     text-align: center;
-    padding: 40px;
+    padding: 80px 20px;
 }
 
+header h1 {
+    font-size: 40px;
+}
+
+/* Button */
+.btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background: #ff9800;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+/* Navbar */
 nav {
     background: #222;
     text-align: center;
-    padding: 10px;
+    padding: 12px;
+    position: sticky;
+    top: 0;
 }
 
 nav a {
     color: white;
-    margin: 10px;
+    margin: 15px;
     text-decoration: none;
 }
 
-/* Layout */
+/* Section */
+section {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+/* Cards */
 .services {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
 }
 
-.box {
-    background: #f2f2f2;
-    padding: 20px;
-    margin: 10px;
+.card {
+    background: white;
+    margin: 15px;
+    padding: 25px;
     width: 250px;
     border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
 
 /* Gallery */
-.gallery {
-    text-align: center;
-}
-
 .gallery img {
     width: 250px;
     margin: 10px;
     border-radius: 10px;
     cursor: pointer;
+    transition: 0.3s;
+}
+
+.gallery img:hover {
+    transform: scale(1.05);
 }
 
 /* Popup */
 #popup {
     display: none;
     position: fixed;
-    top: 0;
-    left: 0;
     width: 100%;
     height: 100%;
     background: rgba(0,0,0,0.8);
+    top: 0;
+    left: 0;
     text-align: center;
 }
 
 #popup img {
     max-width: 90%;
-    margin-top: 50px;
+    margin-top: 60px;
 }
 
-/* Responsive มือถือ */
+/* Contact */
+#contact {
+    background: #007bff;
+    color: white;
+}
+
+/* Footer */
+footer {
+    background: #111;
+    color: white;
+    padding: 15px;
+}
+
+/* Responsive */
 @media (max-width: 600px) {
     header h1 {
-        font-size: 24px;
+        font-size: 26px;
     }
 
-    .box {
+    .card {
         width: 90%;
     }
 
