@@ -19,17 +19,16 @@ nav {
     justify-content: space-between;
     align-items: center;
     padding: 0 20px;
-    height: 60px;
-    background-color: #0d1b2a;
-    color: white;
+    height: 70px;
+    background-color: #ffffff; /* สีพื้นสว่างเพื่อให้โลโก้เด่น */
+    box-shadow: 0 2px 6px rgba(0,0,0,0.15);
     position: sticky;
     top: 0;
     z-index: 1000;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
 }
 
 nav .logo img {
-    height: 50px;
+    height: 60px; /* ทำให้โลโก้เด่นขึ้น */
     max-width: 150px;
 }
 
@@ -38,27 +37,35 @@ nav .logo img {
     display: none;
     font-size: 26px;
     cursor: pointer;
+    color: #333;
 }
 
 .nav-links {
     display: flex;
+    align-items: center;
 }
 
 .nav-links a {
-    color: #e0e1dd;
-    margin-left: 15px;
+    color: #333;
+    margin-left: 20px;
     text-decoration: none;
     font-weight: bold;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #fca311;
 }
 
 /* Hero */
 header {
     height: 60vh;
-    background-color: #14213d;
+    background-color: #0d1b2a; /* สีพื้นเข้มให้ตัดกับโลโก้ */
     color: white;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     text-align: center;
     padding: 0 20px;
 }
@@ -154,18 +161,18 @@ footer {
 @media (max-width: 600px) {
     .menu-toggle {
         display: block;
-        color: white;
     }
 
     .nav-links {
         position: absolute;
-        top: 60px;
+        top: 70px;
         right: 0;
-        background: rgba(0,0,0,0.9);
+        background: white;
         width: 100%;
         display: none;
         flex-direction: column;
         padding: 15px 0;
+        box-shadow: 0 2px 6px rgba(0,0,0,0.15);
     }
 
     .nav-links.show {
