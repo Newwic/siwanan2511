@@ -39,3 +39,21 @@ footer{text-align:center;padding:15px 0;background:#0056b3;color:#fff;}
   .nav-links.show{display:flex;}
   .nav-links a{margin:10px 0;text-align:center;}
 }
+/* Hero background */
+.hero {
+  height: 80vh; /* ความสูงของ Hero */
+  background-size: cover; /* ให้เต็มพื้นที่ */
+  background-position: center;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}
+
+.hero-overlay {
+  background-color: rgba(0,0,0,0.5); /* overlay สีดำโปร่งแสง */
+  padding: 40px 20px;
+  border-radius: 12px;
+  text-align: center;
+}
