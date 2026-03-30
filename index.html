@@ -3,17 +3,196 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Siwanan2511 Aluminum - รับติดตั้งอลูมิเนียม กระจก นนทบุรี</title>
-
+<title>Siwanan2511 Aluminum - หน้าแรก</title>
 <link rel="stylesheet" href="style.css">
-</head>
+<style>
+/* Body */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Arial;
+    background: #f4f6f9;
+}
 
+/* Navbar */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    height: 60px;
+    background-image: url('images/ggez1.jpg'); /* พื้นหลัง navbar */
+    background-size: cover;
+    background-position: center;
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+/* โลโก้เป็นรูป */
+nav .logo img {
+    height: 40px; /* พอดีกับ navbar */
+    display: block;
+}
+
+/* Menu */
+.menu-toggle {
+    display: none;
+    font-size: 26px;
+    cursor: pointer;
+}
+
+.nav-links {
+    display: flex;
+}
+
+.nav-links a {
+    color: #e0e1dd;
+    margin-left: 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Hero */
+header {
+    height: 90vh;
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+                url('images/ggez1.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+/* Overlay ข้อความ Hero */
+.hero-overlay {
+    background-color: rgba(0,0,0,0.5);
+    padding: 40px 20px;
+    border-radius: 12px;
+    display: inline-block;
+}
+
+/* Buttons */
+.btn {
+    background: #fca311;
+    padding: 12px 20px;
+    margin: 5px;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+}
+
+.green {
+    background: #25d366;
+    color: white;
+}
+
+/* Section */
+section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+/* Grid */
+.grid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: white;
+    margin: 15px;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+/* Images */
+.grid img {
+    width: 250px;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+/* Contact */
+#contact {
+    background: #14213d;
+    color: white;
+}
+
+/* Floating */
+.float {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #25d366;
+    padding: 15px;
+    border-radius: 50%;
+}
+
+/* Footer */
+footer {
+    background: #000;
+    color: white;
+    padding: 15px;
+}
+
+/* 📱 Mobile */
+@media (max-width: 600px) {
+    .menu-toggle {
+        display: block;
+        color: white;
+    }
+
+    .nav-links {
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background: rgba(0,0,0,0.7);
+        width: 100%;
+        display: none;
+        flex-direction: column;
+    }
+
+    .nav-links.show {
+        display: flex;
+    }
+
+    header {
+        height: auto;
+        padding: 60px 15px;
+    }
+
+    .grid img {
+        width: 90%;
+    }
+}
+
+/* 🎬 Animation */
+.fade {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: 0.6s;
+}
+
+.fade.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+</style>
+</head>
 <body>
 
 <!-- Navbar -->
-<nav style="background-image: url('images/ggez1.jpg'); background-size: cover; background-position: center;">
-    <h2 class="logo">Siwanan2511</h2>
+<nav>
+    <a href="index.html" class="logo">
+        <img src="images/ggez2.jpg" alt="Siwanan2511 Logo">
+    </a>
     <div class="menu-toggle" onclick="toggleMenu()">☰</div>
     <div class="nav-links" id="navLinks">
         <a href="#home">หน้าแรก</a>
@@ -22,21 +201,22 @@
         <a href="#contact">ติดต่อ</a>
     </div>
 </nav>
+
 <!-- Hero -->
 <header id="home">
-    <h1>รับติดตั้งอลูมิเนียม กระจก</h1>
-    <p>บริการครบวงจร บางบัวทอง นนทบุรี</p>
-
-    <div>
-        <a href="tel:0825429782" class="btn">📞 โทรเลย</a>
-        <a href="https://line.me/ti/p/~siwanan2511" class="btn green">💬 LINE</a>
+    <div class="hero-overlay">
+        <h1>รับติดตั้งอลูมิเนียม กระจก</h1>
+        <p>บริการครบวงจร บางบัวทอง นนทบุรี</p>
+        <div>
+            <a href="tel:0825429782" class="btn">📞 โทรเลย</a>
+            <a href="https://line.me/ti/p/~siwanan2511" class="btn green">💬 LINE</a>
+        </div>
     </div>
 </header>
 
 <!-- Services Preview -->
 <section class="fade">
     <h2>บริการของเรา</h2>
-
     <div class="grid">
         <div class="card">งานอลูมิเนียม</div>
         <div class="card">งานกระจก</div>
@@ -47,30 +227,28 @@
 <!-- Work Preview -->
 <section class="fade">
     <h2>ผลงานบางส่วน</h2>
-
     <div class="grid">
-        <img src="images/work1.jpg">
-        <img src="images/work2.jpg">
-        <img src="images/work3.jpg">
+        <img src="images/ggez1.jpg" alt="ผลงาน 1">
+        <img src="images/ggez2.jpg" alt="ผลงาน 2">
+        <img src="images/work3.jpg" alt="ผลงาน 3">
     </div>
 </section>
 
 <!-- Contact -->
 <section id="contact" class="fade">
     <h2>ติดต่อเรา</h2>
-
     <p>📞 082-542-9782</p>
     <p>📍 บางบัวทอง นนทบุรี</p>
-
     <iframe 
         src="https://www.google.com/maps?q=13.9518981,100.439884&z=18&output=embed"
         width="100%" height="300">
     </iframe>
 </section>
 
-<!-- Floating -->
+<!-- Floating LINE -->
 <a href="https://line.me/ti/p/~siwanan2511" class="float">💬</a>
 
+<!-- Footer -->
 <footer>
     <p>© 2026 Siwanan2511 Aluminum</p>
 </footer>
@@ -81,7 +259,7 @@ function toggleMenu() {
     document.getElementById("navLinks").classList.toggle("show");
 }
 
-// 🎬 Fade animation ตอน scroll
+// Fade animation
 const observer = new IntersectionObserver(entries => {
     entries.forEach(entry => {
         if(entry.isIntersecting){
@@ -92,6 +270,5 @@ const observer = new IntersectionObserver(entries => {
 
 document.querySelectorAll(".fade").forEach(el => observer.observe(el));
 </script>
-
 </body>
 </html>
