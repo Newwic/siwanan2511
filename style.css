@@ -1,159 +1,27 @@
-body {
-    margin: 0;
-    font-family: 'Segoe UI', Arial;
-    background: #f4f6f9;
-}
-
-/* Navbar */
 nav {
-    display: flex;
-    justify-content: space-between;
-    padding: 15px 20px;
-    background: #0d1b2a;
-    color: white;
-    position: sticky;
-    top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  /* แทนสีฟ้าด้วยภาพ ggez1 */
+  background-image: url('images/ggez1.jpg');
+  background-size: cover;       /* ให้เต็มพื้นที่ navbar */
+  background-position: center;  /* จัดภาพตรงกลาง */
+  color: #fff;                  /* ตัวหนังสือขาวอ่านง่าย */
+  position: fixed;              /* navbar ติดด้านบนเวลา scroll */
+  width: 100%;
+  z-index: 1000;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* เงานิดหน่อยสวยขึ้น */
 }
 
-.logo {
-    color: white;
+/* ตัวลิงก์ใน navbar */
+nav .nav-links a {
+  color: #fff;
+  text-decoration: none;
+  margin-left: 20px;
+  font-weight: bold;
 }
 
-/* Menu */
-.menu-toggle {
-    display: none;
-    font-size: 26px;
-    cursor: pointer;
-}
-
-.nav-links {
-    display: flex;
-}
-
-.nav-links a {
-    color: #e0e1dd;
-    margin: 10px;
-    text-decoration: none;
-}
-
-/* Hero */
-header {
-    height: 90vh;
-    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
-    url('https://images.unsplash.com/photo-1503387762-592deb58ef4e');
-    background-size: cover;
-    color: white;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-}
-
-.btn {
-    background: #fca311;
-    padding: 12px 20px;
-    margin: 5px;
-    text-decoration: none;
-    border-radius: 6px;
-    font-weight: bold;
-}
-
-.green {
-    background: #25d366;
-    color: white;
-}
-
-/* Section */
-section {
-    padding: 60px 20px;
-    text-align: center;
-}
-
-/* Grid */
-.grid {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
-.card {
-    background: white;
-    margin: 15px;
-    padding: 25px;
-    border-radius: 10px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-}
-
-/* Images */
-.grid img {
-    width: 250px;
-    margin: 10px;
-    border-radius: 10px;
-}
-
-/* Contact */
-#contact {
-    background: #14213d;
-    color: white;
-}
-
-/* Floating */
-.float {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    background: #25d366;
-    padding: 15px;
-    border-radius: 50%;
-}
-
-/* Footer */
-footer {
-    background: #000;
-    color: white;
-    padding: 15px;
-}
-
-/* 📱 Mobile */
-@media (max-width: 600px) {
-
-    .menu-toggle {
-        display: block;
-        color: white;
-    }
-
-    .nav-links {
-        position: absolute;
-        top: 60px;
-        right: 0;
-        background: #0d1b2a;
-        width: 100%;
-        display: none;
-        flex-direction: column;
-    }
-
-    .nav-links.show {
-        display: flex;
-    }
-
-    header {
-        height: auto;
-        padding: 60px 15px;
-    }
-
-    .grid img {
-        width: 90%;
-    }
-}
-
-/* 🎬 Animation */
-.fade {
-    opacity: 0;
-    transform: translateY(30px);
-    transition: 0.6s;
-}
-
-.fade.show {
-    opacity: 1;
-    transform: translateY(0);
+nav .logo {
+  color: #fff;
 }
