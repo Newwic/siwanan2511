@@ -1,16 +1,15 @@
-<div class="services">
-    <div class="card">
-        <h3>งานอลูมิเนียม</h3>
-        <p>ติดตั้งประตู หน้าต่าง</p>
-    </div>
+// เมนูมือถือ toggle
+function toggleMenu() {
+    const navLinks = document.getElementById("navLinks");
+    navLinks.classList.toggle("show");
+}
 
-    <div class="card">
-        <h3>งานกระจก</h3>
-        <p>กระจกใส เทมเปอร์</p>
-    </div>
-
-    <div class="card">
-        <h3>งานก่อสร้าง</h3>
-        <p>ต่อเติม ซ่อมแซม</p>
-    </div>
-</div>
+// Fade animation ตอน scroll
+const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+        if(entry.isIntersecting){
+            entry.target.classList.add("show");
+        }
+    });
+});
+document.querySelectorAll(".fade").forEach(el => observer.observe(el));
