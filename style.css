@@ -57,3 +57,21 @@ footer{text-align:center;padding:15px 0;background:#0056b3;color:#fff;}
   border-radius: 12px;
   text-align: center;
 }
+/* Hero background */
+.hero {
+  height: 80vh;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}
+
+.hero-overlay {
+  background-color: rgba(0,0,0,0.5); /* overlay สีดำโปร่งแสง */
+  padding: 40px 20px;
+  border-radius: 12px;
+  text-align: center;
+}
